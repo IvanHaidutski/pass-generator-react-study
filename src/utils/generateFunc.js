@@ -1,4 +1,4 @@
-function generateFunc() {
+function generateFunc(num) {
   const mainArray =
     "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%&*()-=+<>?§";
 
@@ -10,7 +10,7 @@ function generateFunc() {
     return Math.floor(Math.random() * (max - min + 1) + min); // Максимум и минимум включаются
   }
 
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < num; i++) {
     let index = getRandomNumb(0, 78);
     let addingElem = mainArray[index];
     passArray.push(addingElem);

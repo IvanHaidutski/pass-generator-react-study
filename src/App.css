@@ -36,6 +36,37 @@ button {
   font-size: 18px;
 }
 
+.buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.number {
+  min-width: 70px;
+  background-color: #1f1f1f;
+  border: solid 1px #52525b;
+  color: #52525b;
+  border-radius: 5px;
+}
+
+.number:active {
+  border: solid 1px #52525b;
+  background-color: rgb(106, 204, 76);
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.number:hover {
+  border: solid 1px rgb(106, 204, 76);
+  transition: all 0.2s ease-in-out;
+}
+
+.characters-text {
+  color: #52525b;
+}
+
 .btns-wrapper {
   display: flex;
   justify-content: space-between;
