@@ -10,7 +10,7 @@ body {
 
 .main-content {
   padding: 40px 40px;
-  margin: 200px auto;
+  margin: 100px auto;
   max-width: 500px;
   min-height: 400px;
   background-color: #1f1f1f;
@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  color: rgb(119, 119, 119);
+  color: rgb(190, 190, 190);
   text-align: center;
   font-weight: 500;
   margin-bottom: 50px;
@@ -40,7 +40,7 @@ button {
   display: flex;
   gap: 5px;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 10px 0 20px 0;
 }
 
 .number {
@@ -93,5 +93,24 @@ button {
   color: white;
   background-color: #1f1f1f;
   box-shadow: inset 0px 0px 0px 1px rgb(106, 204, 76);
+  transition: all 0.2s ease-in-out;
+}
+
+.generate:active {
+  background-color: rgb(106, 204, 76);
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.copy:hover {
+  color: white;
+  background-color: #1f1f1f;
+  box-shadow: inset 0px 0px 0px 1px rgb(106, 204, 76);
+  transition: all 0.2s ease-in-out;
+}
+
+.copy:active {
+  background-color: rgb(106, 204, 76);
+  color: black;
   transition: all 0.2s ease-in-out;
 }

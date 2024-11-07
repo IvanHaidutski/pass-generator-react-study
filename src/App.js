@@ -10,9 +10,16 @@ function App() {
     return setPlaseHolder(generateFunc(passLength));
   };
 
-  // function changePassLength() {
-  //   return (passLength = setPassLength(n));
-  // }
+  function copyPass() {
+    navigator.clipboard
+      .writeText(placeHolderPass)
+      .then(function () {
+        console.log("Text copied to clipboard");
+      })
+      .catch(function (error) {
+        console.error("Error:", error);
+      });
+  }
 
   return (
     <div className="App">
@@ -31,7 +38,9 @@ function App() {
           <button className="generate" onClick={generatedPass}>
             Generate
           </button>
-          <button className="copy">Copy!</button>
+          <button className="copy" onClick={copyPass()}>
+            Copy!
+          </button>
         </div>
       </div>
     </div>
